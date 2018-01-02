@@ -1263,7 +1263,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\|\&gt;|&lt;~&gt;|&lt;&gt;|&lt;&lt;&lt;|&gt;&gt;&gt;|~&gt;&gt;|&lt;&lt;~|~&gt;|&lt;~|&lt;\|&gt;</string>
+					<string>\|\&gt;|&lt;~&gt;|&lt;&gt;|[^&lt;&gt;]&lt;&lt;&lt;[^&lt;&gt;]|[^&lt;&gt;]&gt;&gt;&gt;[^&lt;&gt;]|~&gt;&gt;|&lt;&lt;~|~&gt;|&lt;~|&lt;\|&gt;</string>
 					<key>name</key>
 					<string>keyword.operator.sigils_1.elixir</string>
 				</dict>
@@ -1282,7 +1282,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>===?|!==?|&lt;=?|&gt;=?</string>
+					<string>[^=&gt;&lt;]===?[^=&gt;&lt;]|[^=&gt;&lt;]!==?[^=&gt;&lt;]|&lt;=?|&gt;=?</string>
 					<key>name</key>
 					<string>keyword.operator.comparison.elixir</string>
 				</dict>
